@@ -15,6 +15,6 @@ Step-3: save on Github (commit and push) what has been done so far, including th
 
 Step-4: let's continuing coding ... :)
 
-## Watch the site live here
+<!-- ## Watch the site live here
 
-- [Online](https://sandrinependa.github.io/cv-web/)
+- [Online](https://sandrinependa.github.io/cv-web/) -->
