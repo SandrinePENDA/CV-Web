@@ -25,14 +25,10 @@ a {
     font-family: "Poppins", sans-serif;
 }
 
-p, header {
+p, header, li, .title-exp {
     color: var(--night);
     font-family: "Roboto Condensed", serif;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    font-size: 18px;
 }
 /*** END GENERAL SETTINGS ***/
 
@@ -46,17 +42,34 @@ img {
     font-size: 20px;
 }
 
-span.skills{
-    /* position:absolute;
-    left:50%;
-    margin-left:-8px;
-    top: 50%; */
- }
-
-  span.skills::before{
-    content:url('../img/coche-32px.png');
+span.skills::before{
+    content:url('../img/coche-24px.png');
     width: auto;
     height: auto;
     display: inline;
+}
+
+.container .accordion {
+    margin: 0 13%;
+}
+
+img.interests {
+    width: 200px;
+    height: 200px;
+}
+
+.footer-legals {
+    color: var(--night);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+/* Managing mobile screens */
+@media screen and (max-width: 512px ){
+    .container .accordion {
+        margin: 0;
+    }
   }
   
