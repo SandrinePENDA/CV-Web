@@ -18,7 +18,24 @@
         <!-- Left side -->
         <article class="col-6">
             <!-- Prénom & Nom -->
-            <span class="d-block">Sandrine N. PENDA</span>
+            <!-- <span class="d-block">Sandrine N. PENDA</span> -->
+
+            <form action="" method="post" class="name-firstname">
+                <input type="text" name="firstname" id="firstname">
+                <input type="text" name="fathername" id="fathername">
+                <button type="submit" name="form-submit">Changer</button>
+
+
+                <?php 
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") { // Vérifie que le formulaire a été soumis
+                        if (!empty($_POST['firstname']) && !empty($_POST['fathername'])) {
+                            echo '<span class="d-block">' . htmlspecialchars($_POST["firstname"]) . ' ' . htmlspecialchars($_POST["fathername"]) . '</span>';
+                        } else {
+                            echo "<p>Veuillez remplir tous les champs.</p>";
+                        }
+                    }
+                ?>
+                </form>
 
             <!-- Moyen de contact -->
             <div class="flex-column">
@@ -37,7 +54,6 @@
 
     <!-- MAIN section -->
     <main>
-        <!-- Titre du CV -->
         <h1 class="cv-title text-uppercase text-center">webmaster digital junior</h1>
 
         <!-- Rubrique 'à propos de moi' -->
