@@ -1,7 +1,4 @@
 .cv-headings {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: inline-block;
     background-color: var(--bg-rubrik); /* Bleu clair */
     color: var(--titre-rubrik); /* Bleu plus foncé */
@@ -27,5 +24,18 @@
   
   .cv-headings::after {
     right: -110px;
+  }
+
+  @media screen and (max-width: 512px ){
+    .cv-headings {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* .cv-headings span {
+      text-align: center;
+    } */
   }
   

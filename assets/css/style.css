@@ -41,3 +41,22 @@ img {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
+
+.intro {
+    font-size: 20px;
+}
+
+span.skills{
+    /* position:absolute;
+    left:50%;
+    margin-left:-8px;
+    top: 50%; */
+ }
+
+  span.skills::before{
+    content:url('../img/coche-32px.png');
+    width: auto;
+    height: auto;
+    display: inline;
+  }
+  
